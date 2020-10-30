@@ -17,12 +17,12 @@ public class DescendingSort {
             numbers[index] = input.nextInt();
         }               
 
-        for (int i = 0; i < numbers.length - 1; i++) {
+        for (int i = 0; i < numbers.length; i++) {
           for (int j = i + 1; j < numbers.length; j++) {
             if (numbers[i] < numbers[j]) {
-             int t = numbers[j];
-              numbers[i] = numbers[j];
-              numbers [j] = t;
+             int t = numbers [j];
+              numbers [j] = numbers [i];
+              numbers [i] = t;
             }
           }
         }
