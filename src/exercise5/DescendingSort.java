@@ -15,11 +15,25 @@ public class DescendingSort {
         System.out.println("Enter numbers: ");
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = input.nextInt();
-        }
+        }               
 
-        // Sort numbers in descending order
+        for (int i = 0; i < numbers.length; i++) {
+          for (int j = i + 1; j < numbers.length; j++) {
+            if (numbers[i] < numbers[j]) {
+             int t = numbers [j];
+              numbers [j] = numbers [i];
+              numbers [i] = t;
+            }
+          }
+        }
+          
+
+          
+        
 
         String numbersAsString = Arrays.toString(numbers);
         System.out.println("Sorted numbers: " + numbersAsString);
+    
+    
     }
 }
