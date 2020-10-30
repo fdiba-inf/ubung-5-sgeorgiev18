@@ -21,10 +21,10 @@ public class AscendingSort {
           
 
           for (int k = i + 1; k < numberCount; k++) {
-            if (numbers [k] > numbers [i]) {
-              int y = numbers [k];
-              numbers [k] = numbers [i];
-              numbers [i] = y;
+            if (numbers [k] < numbers [i]) {
+              int y = numbers [i];
+              numbers [i] = numbers [k];
+              numbers [k] = y;
 
               }
             }
